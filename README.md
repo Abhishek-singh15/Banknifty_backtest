@@ -23,6 +23,7 @@ Brief discription of each script
 
 1)Backtest_autotrader - This script is like a skeleton of this whole program. It is managing the pipeline or flow of scripts. This script is responsible to directly connect with exchange and run your algo on prod servers. I have introduced time_scheduler and time_buffer variables to keep track of time.
 Time_scheduler variable : keeps track of how much time every script is taking.
+time_buffer : controls how much time max the script shall run
 
 
 2)Event_handler - This script handles the events which are classified into Realtime and historical. All the historical backtesting comes in histoorical event. All realtime events(tick by tick data or continuous stream of data or realtime data) backtesting is handled by realtime event part of event handler.
